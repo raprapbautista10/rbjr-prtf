@@ -7,7 +7,6 @@ $(window).on('load',function() {
 
 $('.portfolio-block, .menu-item').on('click', function() {
 
-    //Portfolio masonry
     var $container = $('#projects');
     $container.isotope({
       masonry: {
@@ -16,7 +15,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
       itemSelector: '.project'
     });
 
-    //Portfolio filters
     $('#filters').on( 'click', 'li', function() {
       $('#filters li').removeClass('active');
       $(this).addClass('active');
@@ -26,7 +24,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
 
 });
 
-	//Portfolio Modal
 	$('.open-project').on('click', function(){
 		var projectUrl = $(this).attr("href");
 
@@ -40,7 +37,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
 
 	});
 
-	//Blog post Modal
 	$('.open-post').on('click', function(){
 		var postUrl = $(this).attr("href");
 
@@ -54,7 +50,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
 
 	});
 
-	//On Click Open Menu Items
 	$('.menu-item, .menu-block').on( 'click', function() {
       $('.name-block').addClass('reverse');
 	  $('.name-block-container').addClass('reverse');
@@ -62,7 +57,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
 	  $('.inline-menu-container').removeClass('hidex');
 	  $('.inline-menu-container').addClass('showx');
     });
-	//On Click Open About/Resume Block
 	$('.about, .about-block').on( 'click', function() {
 	  $('.content-blocks').removeClass('showx');
 	  $('.content-blocks').addClass('hidex');
@@ -71,7 +65,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
 	  $('.menu-item').removeClass('active');
 	  $('.menu-item.about').addClass('active');
     });
-	//On Click Open Portfolio Block
 	$('.portfolio, .portfolio-block').on( 'click', function() {
 	  $('.content-blocks').removeClass('showx');
 	  $('.content-blocks').addClass('hidex');
@@ -80,7 +73,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
 	  $('.menu-item').removeClass('active');
 	  $('.menu-item.portfolio').addClass('active');
     });
-	//On Click Open Blog Block
 	$('.blog, .blog-block').on( 'click', function() {
 	  $('.content-blocks').removeClass('showx');
 	  $('.content-blocks').addClass('hidex');
@@ -89,7 +81,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
 	  $('.menu-item').removeClass('active');
 	  $('.menu-item.blog').addClass('active');
     });
-	//On Click Open Contact Block
 	$('.contact, .contact-block').on( 'click', function() {
 	  $('.content-blocks').removeClass('showx');
 	  $('.content-blocks').addClass('hidex');
@@ -99,7 +90,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
 	  $('.menu-item.contact').addClass('active');
     });
 
-	//On Click Close Blocks
 	$('#close').on( 'click', function() {
 	  $('.name-block').removeClass('reverse');
 	  $('.name-block-container').removeClass('reverse');
@@ -112,7 +102,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
     });
 
 
-	//Placeholder
     $('input,textarea').on( 'focus', function(){
        $(this).data('placeholder',$(this).attr('placeholder'))
        $(this).attr('placeholder','');
