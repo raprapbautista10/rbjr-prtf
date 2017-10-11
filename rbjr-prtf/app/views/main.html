@@ -7,15 +7,21 @@
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <!-- Bootstrap core CSS -->
+        <!-- Custom styles for this template -->
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+        <link href="/public/stylesheets/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/public/stylesheets/style.css">
         #{get 'moreScripts' /}
     </head>
-    <header>
-        <span>
-            header test
-        </span>
-    </header>
     <body>
         #{doLayout /}
     </body>
+    <script src="@{'/public/javascripts/jquery.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+    <script src="@{'/public/javascripts/bootstrap.min.js'}"></script>
+    <script src="@{'/public/javascripts/jquery.isotope.min.js'}"></script>
+    <script src="@{'/public/javascripts/jquery.placeholder.min.js'}"></script>
+    <script src="@{'/public/javascripts/contact_me.js'}"></script>
+    <script src="@{'/public/javascripts/main.js'}"></script>
 </html>
