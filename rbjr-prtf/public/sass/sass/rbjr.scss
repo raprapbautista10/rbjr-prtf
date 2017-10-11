@@ -1,5 +1,6 @@
-.menu-block{
+
+.about-block-container, .portfolio-block-container, .blog-block-container, .contact-block-container{
     &:hover{
-        background: #F34452;
+        background: rgba(0,0,0, 0.7);
     }
 }

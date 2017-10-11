@@ -1,4 +1,4 @@
-/* line 2, ../../sass/sass/rbjr.scss */
-.menu-block:hover {
-  background: #F34452;
+/* line 3, ../../sass/sass/rbjr.scss */
+.about-block-container:hover, .portfolio-block-container:hover, .blog-block-container:hover, .contact-block-container:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
