@@ -2030,3 +2030,17 @@ ul.info-list li strong {
         padding: 0 10px;
     }
 }
+.modal{
+    padding-left: 0 !important;
+}
+.modal-content, .modal-dialog{
+    height: 100%;
+}
+#project{
+    height: 100%;
+}
+#project .content{
+    height: 100%;
+    padding: 40px 0 0 0;
+    border: 0;
+}
