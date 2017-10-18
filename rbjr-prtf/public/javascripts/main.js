@@ -111,4 +111,6 @@ $('.portfolio-block, .menu-item').on('click', function() {
     });
 
 	$('input, textarea').placeholder();
-
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
